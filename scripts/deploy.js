@@ -46,7 +46,14 @@ async function main() {
   
   const data = get(chainId)
 
-  await deploy("PancakeRouter", [data.PancakeFactory, data.WVLX])
+  if (data.WagyuFactory && data.WVLX) {
+    await deploy("WagyuRouter", [data.WagyuFactory, data.WVLX])
+  }
+  else {
+    throw "data.WagyuFactory and data.WVLX are expected to be available"
+  }
+
+  
 
 }
 
