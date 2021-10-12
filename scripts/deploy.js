@@ -1,3 +1,10 @@
+function timeout(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function sleep() {
+  return await timeout(10000);
+}
+
 function get(chainId) {
   const fs = require("fs");
 
@@ -32,6 +39,7 @@ async function deploy(name, args=[]) {
   const token = await Token.deploy.apply(Token, finalArgs);
   
   save(chainId, name, token.address); 
+  await sleep()
   console.log("deployed ", name, token.address);
   return token.address
 
