@@ -1,0 +1,1088 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\examples\\ExampleFlashSwap.sol": {
+      "lastModificationDate": 1659650082174,
+      "contentHash": "42cd5bef7398fca383353c3939d95eb8",
+      "sourceName": "contracts/examples/ExampleFlashSwap.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Callee.sol",
+        "../libraries/PancakeLibrary.sol",
+        "../interfaces/V1/IUniswapV1Factory.sol",
+        "../interfaces/V1/IUniswapV1Exchange.sol",
+        "../interfaces/IPancakeRouter01.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleFlashSwap"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\node_modules\\@uniswap\\v2-core\\contracts\\interfaces\\IUniswapV2Callee.sol": {
+      "lastModificationDate": 1659652541543,
+      "contentHash": "30a4aed15b3fa3ce5588118b7cecfa7f",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Callee.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Callee"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\libraries\\PancakeLibrary.sol": {
+      "lastModificationDate": 1659650155682,
+      "contentHash": "9e5ad98b519c8517e4ea9b4569fcce08",
+      "sourceName": "contracts/libraries/PancakeLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "PancakeLibrary"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\interfaces\\V1\\IUniswapV1Factory.sol": {
+      "lastModificationDate": 1659650082207,
+      "contentHash": "28233b48ea6bfc76bfdd986ad1aca6cc",
+      "sourceName": "contracts/interfaces/V1/IUniswapV1Factory.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV1Factory"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\interfaces\\V1\\IUniswapV1Exchange.sol": {
+      "lastModificationDate": 1659650082205,
+      "contentHash": "5d488e4502cbe3de5a448ef986bcd754",
+      "sourceName": "contracts/interfaces/V1/IUniswapV1Exchange.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV1Exchange"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\interfaces\\IPancakeRouter01.sol": {
+      "lastModificationDate": 1659650082196,
+      "contentHash": "b065003f68f8e709807a610e5b63353f",
+      "sourceName": "contracts/interfaces/IPancakeRouter01.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IPancakeRouter01"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\interfaces\\IERC20.sol": {
+      "lastModificationDate": 1659650082192,
+      "contentHash": "2290ca2ec74690ed9024d986955ef431",
+      "sourceName": "contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\interfaces\\IWETH.sol": {
+      "lastModificationDate": 1659650082201,
+      "contentHash": "066282b2add4d34a23450b209485d030",
+      "sourceName": "contracts/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\node_modules\\@uniswap\\v2-core\\contracts\\interfaces\\IUniswapV2Pair.sol": {
+      "lastModificationDate": 1659652541614,
+      "contentHash": "3fa31c3860f2b9585c3a98c64850829e",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Pair"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\libraries\\SafeMath.sol": {
+      "lastModificationDate": 1659650082218,
+      "contentHash": "5c1a77bf4696b29e1c42de054bd4bd4a",
+      "sourceName": "contracts/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\SquiddyRouter.sol": {
+      "lastModificationDate": 1659651423471,
+      "contentHash": "21811a32c799d49afa3e64c09bda4df1",
+      "sourceName": "contracts/SquiddyRouter.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+        "./interfaces/IPancakeRouter02.sol",
+        "./libraries/PancakeLibrary.sol",
+        "./libraries/SafeMath.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "SquiddyRouter"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\node_modules\\@uniswap\\v2-core\\contracts\\interfaces\\IUniswapV2Factory.sol": {
+      "lastModificationDate": 1659652541579,
+      "contentHash": "ec39b5372f4f4d52101b4da561e2aee6",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Factory"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\node_modules\\@uniswap\\lib\\contracts\\libraries\\TransferHelper.sol": {
+      "lastModificationDate": 1659652540996,
+      "contentHash": "217eebcde87d40a3d470ac72f50c6aba",
+      "sourceName": "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\interfaces\\IPancakeRouter02.sol": {
+      "lastModificationDate": 1659650082198,
+      "contentHash": "fba64df63a02797340a02f5055ef87a4",
+      "sourceName": "contracts/interfaces/IPancakeRouter02.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IPancakeRouter01.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IPancakeRouter02"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\PancakeRouter01.sol": {
+      "lastModificationDate": 1659650082170,
+      "contentHash": "3dc8c1cd9d0be54a816b5fc5ecd3a4d7",
+      "sourceName": "contracts/PancakeRouter01.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+        "./libraries/PancakeLibrary.sol",
+        "./interfaces/IPancakeRouter01.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "PancakeRouter01"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\test\\RouterEventEmitter.sol": {
+      "lastModificationDate": 1659650082224,
+      "contentHash": "4d481ba96ad68d1fb0dcb54e2a885f8b",
+      "sourceName": "contracts/test/RouterEventEmitter.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IPancakeRouter01.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "RouterEventEmitter"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\PancakeMigrator.sol": {
+      "lastModificationDate": 1659650082167,
+      "contentHash": "339aa8d720116258d9906161b6d35404",
+      "sourceName": "contracts/PancakeMigrator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+        "./interfaces/IPancakeMigrator.sol",
+        "./interfaces/V1/IUniswapV1Factory.sol",
+        "./interfaces/V1/IUniswapV1Exchange.sol",
+        "./interfaces/IPancakeRouter01.sol",
+        "./interfaces/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "PancakeMigrator"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\interfaces\\IPancakeMigrator.sol": {
+      "lastModificationDate": 1659650082194,
+      "contentHash": "d1c34b8d552750ebe874f2e957810496",
+      "sourceName": "contracts/interfaces/IPancakeMigrator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPancakeMigrator"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\examples\\ExampleSwapToPrice.sol": {
+      "lastModificationDate": 1659650082187,
+      "contentHash": "c05143441910a762f1efeaf66a91b019",
+      "sourceName": "contracts/examples/ExampleSwapToPrice.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "@uniswap/lib/contracts/libraries/Babylonian.sol",
+        "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/IPancakeRouter01.sol",
+        "../libraries/SafeMath.sol",
+        "../libraries/PancakeLibrary.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleSwapToPrice"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\node_modules\\@uniswap\\lib\\contracts\\libraries\\Babylonian.sol": {
+      "lastModificationDate": 1659652540905,
+      "contentHash": "c1c9269c5671ee79dc6b477c4a8aaf96",
+      "sourceName": "@uniswap/lib/contracts/libraries/Babylonian.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "Babylonian"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\examples\\ExampleSlidingWindowOracle.sol": {
+      "lastModificationDate": 1659650082186,
+      "contentHash": "359d7468c4d177bda3d290905869775e",
+      "sourceName": "contracts/examples/ExampleSlidingWindowOracle.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "@uniswap/lib/contracts/libraries/FixedPoint.sol",
+        "../libraries/SafeMath.sol",
+        "../libraries/PancakeLibrary.sol",
+        "../libraries/PancakeOracleLibrary.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleSlidingWindowOracle"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\node_modules\\@uniswap\\lib\\contracts\\libraries\\FixedPoint.sol": {
+      "lastModificationDate": 1659652540925,
+      "contentHash": "dc596f83d7c5841f61b8c8b244ff59e9",
+      "sourceName": "@uniswap/lib/contracts/libraries/FixedPoint.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FixedPoint"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\libraries\\PancakeOracleLibrary.sol": {
+      "lastModificationDate": 1659650082215,
+      "contentHash": "a36d93502622aed272fe03a36044f6f5",
+      "sourceName": "contracts/libraries/PancakeOracleLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "@uniswap/lib/contracts/libraries/FixedPoint.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "PancakeOracleLibrary"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\examples\\ExampleOracleSimple.sol": {
+      "lastModificationDate": 1659650082183,
+      "contentHash": "43f14a52ac64dd12c4b9c691f4c037ab",
+      "sourceName": "contracts/examples/ExampleOracleSimple.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "@uniswap/lib/contracts/libraries/FixedPoint.sol",
+        "../libraries/PancakeOracleLibrary.sol",
+        "../libraries/PancakeLibrary.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleOracleSimple"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\libraries\\PancakeLibraryTemplate.sol": {
+      "lastModificationDate": 1659650082214,
+      "contentHash": "3173358092db1dd574f5dfc7ddd85432",
+      "sourceName": "contracts/libraries/PancakeLibraryTemplate.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "PancakeLibrary"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\test\\ERC20.sol": {
+      "lastModificationDate": 1659650082223,
+      "contentHash": "bea33121b8f6de6b55cb10476376518a",
+      "sourceName": "contracts/test/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\test\\DeflatingERC20.sol": {
+      "lastModificationDate": 1659650082222,
+      "contentHash": "95281ba667bb23f503859730ec60a790",
+      "sourceName": "contracts/test/DeflatingERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "DeflatingERC20"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\Migrations.sol": {
+      "lastModificationDate": 1659650082166,
+      "contentHash": "5491b5548247fa0d92e04e914451c61d",
+      "sourceName": "contracts/Migrations.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.25 <0.7.0"
+      ],
+      "artifacts": [
+        "Migrations"
+      ]
+    },
+    "C:\\Users\\18165\\Downloads\\squiddy-swap-mainnet\\squiddy-swap-periphery\\contracts\\test\\WETH9.sol": {
+      "lastModificationDate": 1659650082228,
+      "contentHash": "6499b8c76657ae2329633573dac36b43",
+      "sourceName": "contracts/test/WETH9.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "WETH9"
+      ]
+    }
+  }
+}

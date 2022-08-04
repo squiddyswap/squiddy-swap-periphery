@@ -8,7 +8,7 @@ async function sleep() {
 function get(chainId) {
   const fs = require("fs");
 
-  const filename = '../wagyu-addresses/' + chainId + '.json'
+  const filename = './squiddy-addresses/' + chainId + '.json'
 
   const data = fs.existsSync(filename) ? JSON.parse(fs.readFileSync(filename, "utf8")) : {}
 
@@ -19,7 +19,7 @@ function save(chainId, name, value) {
 
   const fs = require("fs");
 
-  const filename = '../wagyu-addresses/' + chainId + '.json'
+  const filename = './squiddy-addresses/' + chainId + '.json'
 
   const data = get(chainId)
 
@@ -32,7 +32,7 @@ function save(chainId, name, value) {
 async function deploy(name, args=[]) {
   console.log("deploy " + name, args)
   const signers = await ethers.getSigners();
-  const nonce = await ethers.provider.getTransactionCount(signers[0]._address)
+  const nonce = await ethers.provider.getTransactionCount(signers[0].address)
   const { chainId } = await ethers.provider.getNetwork();
   const Token = await ethers.getContractFactory(name);
   const finalArgs = [...args, { nonce }] 
@@ -54,11 +54,11 @@ async function main() {
   
   const data = get(chainId)
 
-  if (data.WagyuFactory && data.WVLX) {
-    await deploy("WagyuRouter", [data.WagyuFactory, data.WVLX])
+  if (data.SquiddyFactory && data.WMATIC) {
+    await deploy("SquiddyRouter", [data.SquiddyFactory, data.WMATIC])
   }
   else {
-    throw "data.WagyuFactory and data.WVLX are expected to be available"
+    throw "data.SquiddyFactory and data.WMATIC are expected to be available"
   }
 
   
