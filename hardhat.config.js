@@ -8,12 +8,12 @@ module.exports = {
       chainId: 1337,
     },
     mainnet: {
-      accounts: ['dcea0bc45d5adf30f5595fb2cc19e2a180ed3ff68bf38d9071218defbf77f7a1'],
+      accounts: [process.env.privateKey],
       url: "https://polygon-rpc.com/",
       chainId: 137,
     },
     testnet: {
-      accounts: ['dcea0bc45d5adf30f5595fb2cc19e2a180ed3ff68bf38d9071218defbf77f7a1'],
+      accounts: [process.env.privateKey],
       url: "https://rpc-mumbai.matic.today",
       chainId: 80001,
     },
